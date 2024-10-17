@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form with Background Video</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background video -->
+  <video class="background-video" autoplay muted loop>
+    <source src="../Assets/video (2160p).mp4" type="video/mp4">
+  </video>
+
+  <div class="container">
+    <form>
+      <h1>REGISTRATION FORM</h1><br>
+      <label id="first-name" for="first-name">
+        <p>Enter First Name</p>
+        <input type="text" id="first-name" placeholder="Enter First Name">
+      </label><br>
+      <label id="last-name" for="last-name">
+        <p>Enter Last Name</p>
+        <input type="text" id="last-name" placeholder="Enter Last Name">
+      </label><br>
+      <label id="email" for="email">
+        <p>Enter Email</p>
+        <input type="email" id="email" placeholder="Enter Email">
+      </label><br>
+      <label id="password" for="password">
+        <p>Enter Password</p>
+        <input type="password" id="password" placeholder="Enter Password">
+      </label><br>
+      <label id="confirm-password" for="confirm-password">
+        <p>Confirm Password</p>
+        <input type="password" id="confirm-password" placeholder="Confirm Password">
+      </label><br>
+      <button id="btn">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    const btn = document.querySelector('#btn');
+    const password = document.querySelector('#password');
+    const confirmPassword = document.querySelector('#confirm-password');
+
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      form()
+    });
+    function form(){
+      pass = /[0123456789]/
+      
+    }
+  </script>
+
+</body>
+</html>
